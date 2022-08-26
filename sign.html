@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="sign.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">M.cher</div>
+        <div class="search_box">
+            <input type="search" placeholder="search here">
+            <p><span class="fa fa-search"></span>Search</p>
+
+        </div>
+        <ul>
+            <li> <a href="#"><i class="fas fa-user" onclick="show()"></i>Sign In</a>
+                <!--- <div id="item" class="from-contenair"></div>-->
+                <!--<div id="item" class="row"></div>--id="show-login"-->
+            </li>
+            <li><a href="#"><i class="fa-solid fa-message" ></i>message</a></li>
+            <li><a href="#">orders</a></li>
+            <li><a href="#"><i class = "fas fa-shopping-cart"></i>cart</a></li>
+
+        </ul>
+    </nav>
+    <div class="account-page">
+        <div class="contenair">
+            <div class="row">
+
+                <div id="" class="from-contenair">
+                    <!-- <div class="close-btn">&times;</div>-->
+
+                    <div class="from-btn">
+                        <span onclick="Login()">login</span>
+                        <span onclick="Register()">register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form id="loginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">login</button>
+                        <a href="">forget password?</a>
+                        <p class="text">continue with</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-facebook-f"></i>
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-twitter"></i>
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-google"></i>
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+
+
+                    </form>
+
+                    <form id="regForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="your email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="end">
+        <hr>
+        <div class="svc">
+            <h5>Customer services</h5>
+            <ul>
+                <li>
+                    <a href="#">Help Center</a>
+                </li>
+                <li>
+                    <a href="#">File a case</a>
+                </li>
+                <li>
+                    <a href="#">Get paid for your feedback</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="About">
+            <h5>About Us</h5>
+            <ul>
+                <li>
+                    <a href="#">About Mcher.com</a>
+                </li>
+                <li>
+                    <a href="#">About mcher Group</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="Source">
+            <h5>source</h5>
+            <ul>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">All categories</a>
+                </li>
+                <li>
+                    <a href="#">Request for Quotation</a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+    <script src="M.js"></script>
+</body>
+
+</html>

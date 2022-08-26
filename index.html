@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav>
+        <div class="icon">M.cher</div>
+        <div class="search_box">
+            <input type="search" placeholder="search here">
+            <p><span class="fa fa-search"></span>Search</p>
+
+        </div>
+        <ul>
+            <li> <a href="sign.html"><i class="fas fa-user" onclick="show()"></i>Sign In</a>
+                <!--- <div id="item" class="from-contenair"></div>-->
+                <!--<div id="item" class="row"></div>--id="show-login"-->
+            </li>
+            <li><a href="#"><i class="fa-solid fa-message" ></i>message</a></li>
+            <li><a href="#">orders</a></li>
+            <li><a href="#"><i class = "fas fa-shopping-cart"></i>cart</a></li>
+
+        </ul>
+    </nav>
+    <div class="account-page">
+        <div class="contenair">
+            <div class="row">
+
+                <div id="" class="from-contenair">
+                    <!-- <div class="close-btn">&times;</div>-->
+
+                    <div class="from-btn">
+                        <span onclick="Login()">login</span>
+                        <span onclick="Register()">register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form id="loginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">login</button>
+                        <a href="">forget password?</a>
+                        <p class="text">continue with</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-facebook-f"></i>
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-twitter"></i>
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-google"></i>
+                            <a href="#" class="social-icon"></a>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+
+
+                    </form>
+
+                    <form id="regForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="your email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="grand-marché">
+        <div class="market">
+            <h1>My markets</h1>
+
+            <div class="drop">
+                <button type="button" class="bt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Consumer Electornic 
+                </button>
+                <div class="dropdown-menu">
+                    <a href="">Battrey</a><br>
+                    <a href="">Cable</a><br>
+                    <a href="">Camera</a><br>
+                </div>
+            </div><br>
+            <!--  <div class="drop">
+                <button type="button" class="bt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Apparel
+                </button>
+                <div class="dropdown-menu">
+                    <a href="">Baby</a><br>
+                    <a href="">women</a><br>
+                    <a href="">men</a><br>
+                </div>
+            </div>-->
+
+
+
+
+            </a>
+
+            <div>
+                <a href="" class="menu-link">
+                    <p>Vehicle Parts & Accessoires </p>
+                </a>
+            </div>
+            <div>
+                <a href="" class="menu-link">
+
+                    <p>Beauty & personel Care </p>
+                </a>
+            </div>
+            <div>
+                <a href="" class="menu-link">
+                    <p>Home & Garden</p>
+                </a>
+            </div>
+            <div>
+                <a href="" class="menu-link">
+                    <p>Sports & Entertainment </p>
+                </a>
+            </div>
+            <div>
+                <a href="categorie.html" target="_blank" class="menu-link">
+                    <p>ALL catogories </p>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div id="contenair">
+            <img class="slides" src="slidee3.jpg" alt="">
+            <img class="slides" src="categ2.webp" alt="">
+            <img class="slides" src="categ3.jpg" alt="">
+            <img class="slides" src="categ1.jpg" alt="">
+            <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+            <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+        </div>
+
+    </section>
+
+    <section class="section3">
+        <div class="para">
+            <h1>Just For you</h1>
+            <div class="sub-title util-left"></div>
+        </div>
+
+        <div class="image">
+
+            <div class="clothing">
+                <img src="polo1.webp" alt="">
+            </div>
+            <div class="All">
+                <div class="im1"><img src="polo2.jpg" alt="">
+                    <p>T-shirt
+                        <p>
+                            <br><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="im1"> <img src="polo3.jpg" alt="">
+                    <p>T-shirt
+                        <p>
+                            <br><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+                </div>
+                <div class="im1"> <img src="air.jpg" alt="">
+                    <p>Air Force
+                        <p>
+                            <br><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="im1"><img src="pin.jpg" alt="">
+                    <p>Nike Air max 270
+                        <p>
+                            <br><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                </div>
+                <div class="im1"> <img src="baby1.webp" alt="">
+                    <p>Ensemble fille
+                        <p>
+                            <br><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="im1"> <img src="baby2.jpg" alt="">
+                    <p>Robe
+                        <p>
+                            <br><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="gallery">
+        <div class="para1">
+            <h1>Gaming</h1>
+
+        </div>
+        <div class="cont">
+            <div class="card">
+                <div class="content">
+                    <img src="gam1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>ASUS</h3>
+                    <p>ASUS ROG PG258Q - Ecran PC gaming eSport 24,5" FHD - Dalle TN - 16:9 - 240Hz</p>
+                    <h6>$310</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+
+                    </ul>
+                </div>
+                <div class="buy-1"> <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="gam22.jpg" alt=""></div>
+                <div class="info">
+                    <h3>Casque Gaming</h3>
+                    <p>Casque Gaming filaire-LOGITECH-G PROX -avec micro-Noir</p>
+                    <h6>$80</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+
+                    </ul>
+                </div>
+                <div class="buy-1">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="gam3.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Acer Predator</h3>
+                    <p>The Acer Predator Helios 300 Laptop is Lightning-Fast</p>
+                    <h6>$600</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+
+                    </ul>
+                </div>
+                <div class="buy-1">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="gam4.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Chaise Gamer</h3>
+                    <p>Chaise Gamer professionnel fauteuil jeux videos XR10 jusqu a 120 kg Gaming</p>
+                    <h6>$120</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+
+                    </ul>
+                </div>
+                <div class="buy-1">
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="gam5.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>manette</h3>
+                    <p>Manette filaire PDP pour Xbox One (Bleu - NA) | Walmart Canada</p>
+                    <h6>$280</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+
+                    </ul>
+                </div>
+                <div class="buy-1">
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="gam6.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Clavier</h3>
+                    <p>UrChoiceLtd® Technologie Clavier Souris Combo Gamer Filaire LED Blanc Rétroéclairé Punk Clavier Gaming </p>
+                    <h6>$27</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+
+                    </ul>
+                </div>
+                <div class="buy-1">
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+    <!--<section>
+        <div class="main-wrapper">
+            <div class="contenair">
+                <div class="product-div">
+                    <div class="img-contenair">
+                        <img src="watch1.jpg" alt="">
+                    </div>
+                    <div class="hover-contenair">
+                        <div><img src="watch2.jpg" alt=""></div>
+
+                        <div><img src="watch5.jpg" alt=""></div>
+                        <div><img src="watch6.jpg" alt=""></div>
+                        <div><img src="watch2.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <span class="product-Name">Analog watch :For Men</span>
+                    <span class="product-price">$50,25</span>
+
+                    <div class="product-rating">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, praesentium possimus deserunt maiores laudantium ab repudiandae facilis</p>
+                    <div class="btn-groups">
+                        <button type="button" class="addtocart"><i class="fas fa-shopping-cart"></i> add to cart</button>
+                        <button type="button" class="buynow"><i class="fas fa-wallet"></i>Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>-->
+
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container">
+                        <img src="watch1.jpg" alt="watch">
+                    </div>
+                    <div class="hover-container">
+                        <div><img src="watch2.jpg"></div>
+                        <div><img src="watch1.jpg"></div>
+                        <div><img src="watch4.jpg"></div>
+                        <div><img src="watch5.jpg"></div>
+                        <div><img src="watch6.jpg"></div>
+
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <span class="product-name">(New) Analog Watch - For Men</span>
+                    <span class="product-price">$ 50.25</span>
+                    <div class="product-rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star-half-alt"></i></span>
+                        <span>(350 ratings)</span>
+                    </div>
+                    <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem exercitationem voluptas.</p>
+                    <div class="btn-groups">
+                        <button type="button" class="add-cart-btn"><i class = "fas fa-shopping-cart"></i>add to cart</button>
+                        <button type="button" class="buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="end">
+        <hr>
+        <div class="svc">
+            <h5>Customer services</h5>
+            <ul>
+                <li>
+                    <a href="#">Help Center</a>
+                </li>
+                <li>
+                    <a href="#">File a case</a>
+                </li>
+                <li>
+                    <a href="#">Get paid for your feedback</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="About">
+            <h5>About Us</h5>
+            <ul>
+                <li>
+                    <a href="#">About Mcher.com</a>
+                </li>
+                <li>
+                    <a href="#">About mcher Group</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="Source">
+            <h5>source</h5>
+            <ul>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">All categories</a>
+                </li>
+                <li>
+                    <a href="#">Request for Quotation</a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="M.js"></script>
+</body>
+
+</html>
